@@ -1,6 +1,6 @@
 # Jiaye的社区着色器TruePBR贴图使用和制作入门教程
 
-新版本的Community Shaders（社区着色器）（在写的时候还是快要）已经发布了，其中包含了许多重量级的新功能，比如全局光照，真实天空照明等等。其中，最为重量级的可能就是TruePBR。TruePBR能够彻底改变老滚5陈旧的材质系统，让它跨过现代游戏材质渲染的门槛：PBR，也就是基于物理的渲染。
+新版本的Community Shaders（社区着色器）已经发布了，其中包含了许多重量级的新功能。其中，最为重量级的可能就是TruePBR。TruePBR能够彻底改变老滚5陈旧的材质系统，让它跨过现代游戏材质渲染的门槛：PBR，也就是基于物理的渲染。
 
 如果你不知道什么是PBR，下面我会简单介绍一下。你也可以直接跳过介绍部分。
 
@@ -231,3 +231,20 @@ PBRNifPatcher
 ```
 
 把它安装到MO2中，启用，然后运行ParallaxGen，你就可以在游戏中看到你的PBR材质了。ParallaxGen会搜寻所有使用你json文件中指定的贴图路径的nif，将它们对应的贴图路径修改为PBR材质的路径，并且给对应的nif文件添加PBR flag。
+
+#### Landscape（地形）的PBR
+
+Landscape部分稍有特殊。但也并不复杂。
+除了像普通的贴图一样放进文件夹以外，你还需要做两件事：
+- 使用xEdit，修改地形贴图对应的Texture Set，把贴图路径指向你的PBR贴图。
+- 在Mod文件夹里，新建PBRTextureSets文件夹。并且每个你修改了的Texture Set，对应建立一个同名的Json文件。比如，Texture Set的EDID为LandscapeDirt01，则文件名为LandscapeDirt01.json。
+内容为：
+```json
+{
+	"roughnessScale" : 1.0,
+	"displacementScale" : 0.6,
+	"specularLevel" : 0.04
+}
+```
+
+和你的普通PBR贴图的参数并无区别，除了不需要指定贴图地址。有了这个文件，Community Shaders才会把这个Texture Set认定为PBR。
