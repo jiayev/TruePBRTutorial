@@ -28,7 +28,8 @@ PBR有多种实现方式，但最常见，也是我们在TruePBR中使用的实�
 前提条件：安装了新版本的Community Shaders。
 目前，Nexus版本还不支持PBR材质。你可以在Discord获取最新测试版，或者使用我提供的版本。
 
-注意事项：不可使用ENB、Auto Parallax、Terrain Parallax Blending Fix
+注意事项：不可使用ENB。
+避免使用Auto Parallax。如果你要使用PBR地形，那就不要使用Terrain Parallax Blending Fix。
 
 必须工具：ParallaxGen https://www.nexusmods.com/skyrimspecialedition/mods/120946
 
