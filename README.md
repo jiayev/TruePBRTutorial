@@ -48,47 +48,7 @@ ParallaxGen会在它的目录下生成一个ParallaxGen_Output.zip文件，你�
 
 需要注意的是，如果你安装了PBR材质，就必须在Community Shaders开启的情况下启动游戏，不然你只会看到一片白。如果你不想使用PBR材质了，在MO2中取消选择PBR材质包，并且取消选择ParallaxGen_Output即可。
 
-目前来说，如果想让整个基础游戏被PBR材质覆盖，需要下列Mod：
-Faultier https://1drv.ms/f/s!Ahxn-lkbsD_CknseaGB-oqiDA5Bz
-
-- Faultier's PBR Skyrim AIO
-
-- Faultier's PBR Landscapes
-
-- Faultier's PBR armors and weapons
-
-- Faultier's PBR vanilla jewelry
-
-Exist https://mega.nz/folder/c2tVCTwQ#CbtunGf0H9DtJBlAFLM00w
-
-- PBR_clothes 和 PBR_dlc_clothes
-
-- PBR_riften 和 riftenleaves01
-
-- PBR_HighHrothgar
-
-- PBR_dungeons, PBR_dungeons_imperial, PBR_dungeons_caves
-
-- Happy PBR Trees（用于Happy Little Trees，应该也覆盖了原版树）
-
-Tomato
-
-- Tomato's PBR Whiterun 1.2 [Tomato&#39;s PBR Whiterun 1.2.7z - Google 云端硬盘](https://drive.google.com/file/d/1-BFwPDQRm0YXFmx2noR5_3cUlUnkg9BY/view?usp=sharing)
-  或 Vanilla PBR WR [Tomato&#39;s Vanilla Whiterun PBR 1.2.7z - Google 云端硬盘](https://drive.google.com/file/d/101n5ykRLZARk14b7pmROwur1vngM_pZb/view?usp=sharing)
-
-- Tomato's Mines PBR [Tomato&#39;s Mines PBR.7z - Google 云端硬盘](https://drive.google.com/file/d/1-Qr9uf2fERNrahJPM_qKbFK_o8CDgctA/view?usp=sharing)
-
-- PBR Vanilla Trees [Tomato&#39;s Vanilla Trees PBR 1.2.7z - Google 云端硬盘](https://drive.google.com/file/d/100eMRhHtpPJ4-uuiZi1zmjQIAcoOfefn/view?usp=sharing)
-
-Jiaye（本人）[PBR mods - Google 云端硬盘](https://drive.google.com/drive/folders/1tF1sQusZ-Vny_r1qQksw28CVc4Z1aaF_?usp=sharing "https://drive.google.com/drive/folders/1tF1sQusZ-Vny_r1qQksw28CVc4Z1aaF_?usp=sharing")
-
-- Weapons and Armors PBR 包括龙、模组、乌木、玻璃、诺德雕刻、吸血鬼、弃誓者、帝国、狼套等等
-
-- 风盔城 Windhelm PBR
-
-- 松加德 Sovngarde PBR
-
-- 警戒者 Vigilant PBR
+我们将很快在Nexus上看到更多PBR材质包。
 
 ### 模组作者：
 
