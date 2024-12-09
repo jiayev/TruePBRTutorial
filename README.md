@@ -152,7 +152,7 @@ TruePBR使用这些贴图的方式，请参考UE4的PBR。
 
 这个json文件的作用是告诉ParallaxGen如何处理这些贴图。texture是匹配的Diffuse贴图的路径。默认状态下，ParallaxGen会认为对应的法线贴图是ironarmor_n.dds，RMAOS贴图是ironarmor_rmaos.dds，视差贴图是ironarmor_p.dds等等。下面的值则是一些参数，比如是否发光、是否有次表面散射、高光强度、次表面散射颜色、粗糙度缩放、次表面散射透明度、视差强度等等。
 
-需要注意的是，specular_level是一个很重要的参数，真实的Specular值是这个参数乘Specular贴图的值。当你的Specular贴图是全白的时候，这个参数就是最终的Specular值，即0.04，这也是绝大多数材质的Specular值。对于雪、水，最终的Specular值约为0.02，而钻石等宝石的Specular值可能会很高。在PhysicallyBased.info上可以查到一些常见材质的Specular值，乘以0.08即可得到这个参数。
+需要注意的是，specular_level是一个很重要的参数，真实的Specular值是这个参数乘Specular贴图的值。当你的Specular贴图是全白的时候，这个参数就是最终的Specular值，即0.04，这也是绝大多数不透明非金属材质的Specular值。对于雪、水，最终的Specular值约为0.02，而钻石等宝石的Specular值可能会很高。金属材质的这个值无需关心，因为金属的IOR是复数并且由颜色表现。在PhysicallyBased.info上可以查到一些常见材质的Specular值，乘以0.08即可得到这个参数。
 
 此外，roughness_scale是粗糙度的缩放，subsurface_color是次表面散射的颜色，subsurface_opacity是次表面散射的透明度，这三个值我们一般不需要修改（修改贴图本身即可）。而displacement_scale是视差强度，一般来说，0.35是一个不错的值。当然，这需要根据你的视差贴图来调整。
 
